@@ -112,7 +112,7 @@ function Install_ct() {
     mv gost /usr/bin/gost
     chmod -R 777 /usr/bin/gost
     wget --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.service && chmod -R 777 gost.service && mv gost.service /usr/lib/systemd/system
-    mkdir /etc/gost && wget --no-check-certificate https://ghproxy.com/ghproxy.com/https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/config.json && mv config.json /etc/gost && chmod -R 777 /etc/gost
+    mkdir /etc/gost && wget --no-check-certificate https://ghproxy.com/https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/config.json && mv config.json /etc/gost && chmod -R 777 /etc/gost
   fi
 
   systemctl enable gost && systemctl restart gost
